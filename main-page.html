@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO PRODUCT SHOWCASE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/generall.css" />
+    <link rel="stylesheet" href="css/respansive.css" />
+    <link rel="stylesheet" href="css/animaitions.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ////////////////// -->
+    <!-- header -->
+    <header class="header">
+      <!-- navigation -->
+      <nav class="nav">
+        <!-- logo start -->
+        <a href="" class="nav_logo"
+          ><img src="img/demo-product-showcase-logo.webp" alt="logo"
+        /></a>
+        <!-- logo end -->
+        <!-- navigation__menu__start -->
+        <div class="nav__menu">
+          <a href="#overview" data-lok="overview" class="nav__menu_links"
+            >Overview</a
+          >
+          <a href="#feature" data-lok="feature" class="nav__menu_links"
+            >Features</a
+          >
+          <a href="#technology" data-lok="technology" class="nav__menu_links"
+            >Technology</a
+          >
+          <a href="#design" data-lok="design" class="nav__menu_links">Design</a>
+          <a href="#review" data-lok="review" class="nav__menu_links">Review</a>
+          <a href="#pricing" data-lok="pricing" class="nav__menu_links"
+            >Pricing</a
+          >
+        </div>
+        <!-- navigation menu end -->
+
+        <!-- nav menu cta start -->
+        <div class="nav_btns">
+          <a class="cta__btn nav__btn hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="nav__btn_icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+
+            <p class="nav__btn_text">Order now</p>
+          </a>
+          <button class="menu_btn">
+            <div class="center">
+              <span class="btn_lines line_top"></span
+              ><span class="btn_lines line_middle"></span
+              ><span class="btn_lines line_bottom"></span>
+            </div>
+          </button>
+        </div>
+      </nav>
+      <!-- nav cta end -->
+    </header>
+    <!-- header end -->
+    <!-- ///////////////// -->
+
+    <!-- hero section start-->
+    <section class="hero">
+      <!-- hero top -->
+      <div class="hero_top">
+        <div class="hero__traker_box">
+          <img
+            src="img/demo-product-showcase-rev-slider-02.webp"
+            alt=""
+            class="hero_image_tracker1 hero-center tracker"
+          />
+        </div>
+        <div class="hero__traker_box">
+          <p class="hero__title hero-center tracker">listening</p>
+        </div>
+        <div class="hero__traker_box">
+          <img
+            src="img/demo-product-showcase-rev-slider-01.png"
+            alt=""
+            class="hero_image_tracker2 hero-center rotate"
+          />
+        </div>
+      </div>
+      <!-- hero middle -->
+      <div class="hero_middle">
+        <div class="hero_middle_box">
+          <p class="middle_title fade_o">Audio technology</p>
+          <div class="middle_dec">
+            <div class="middle_dec_hidden">
+              <p class="middle_dec_text">Adaptive EQ</p>
+              <p class="middle_dec_text">Noise canselltion</p>
+              <p class="middle_dec_text">Dynimac driver</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero_middle_box right">
+          <p class="middle_title fade_o">Effective sensors</p>
+          <div class="middle_dec">
+            <div class="middle_dec_hidden">
+              <p class="middle_dec_text">Accelerometer</p>
+              <p class="middle_dec_text">Poistion sensors</p>
+              <p class="middle_dec_text">Optical sensors</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hero buttom -->
+      <div class="hero_buttom fade" data-delay="1s">
+        <a href="" class="modal_btn">
+          play<svg
+            viewBox="0 0 24 24"
+            width="36"
+            height="36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id="strokeGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop offset="0%" stop-color="var(--pink)" />
+                <stop offset="100%" stop-color="var(--majorelle-blue)" />
+              </linearGradient>
+            </defs>
+
+            <!-- دایره -->
+            <path
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75
+       9.75-4.365 9.75-9.75S17.385 2.25 12 2.25z"
+              stroke="url(#strokeGradient)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <!-- مثلث پلی -->
+            <path
+              d="M10 9.75L15 12l-5 2.25v-4.5z"
+              stroke="url(#strokeGradient)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+          video
+        </a>
+      </div>
+    </section>
+    <!-- hero section end-->
+
+    <!-- ////////////////////////////// -->
+    <!-- section about second start-->
+    <section class="about lok" id="overview" data-lok="overview">
+      <!-- top -->
+      <div class="about_top flex_row fade text_center">
+        <div class="rate_box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <span class="about_top_text"
+          >The best rated headphone on
+          <a class="about_top_link" href="www.amazon.com">Amazon.com</a></span
+        >
+      </div>
+      <!-- ////////////// -->
+      <!-- middle -->
+      <div class="about_middle flex_row">
+        <div class="about_middle_left">
+          <img
+            class="about_middle_left_img fade_l"
+            src="img/demo-product-showcase-01.png"
+            alt=""
+          />
+        </div>
+        <div class="about_middle_right flex_column">
+          <img
+            class="about_middle_right_icon fade_r"
+            src="svg/free_icon_1.svg"
+            alt=""
+          />
+          <h1 class="heading_primary fade_r">Extra bass for moving sound.</h1>
+          <p class="describe_text fade_r">
+            Quality is guaranteed by the latest wireless technology including
+            bluetooth 5.0 high quality codec support and an excellent 30 hour
+            battery life.
+          </p>
+          <a href="" class="cta__btn about_btn flex_center fade_r">
+            <div class="about_btn_box flex_center">
+              <span class="about_btn_hover flex_center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="3"
+                  stroke="currentColor"
+                  class="btn_box_icon icon_l"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+                <p>Explore features</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="3"
+                  stroke="currentColor"
+                  class="btn_box_icon icon_r"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  /></svg
+              ></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- bottom -->
+      <div class="about_bottom flex_center">
+        <div class="about_bottom_boxes fade">
+          <div class="about_boxes_num">01</div>
+          <p class="about_bottom_text">
+            Feel the shape of <span>comfort</span>.
+          </p>
+        </div>
+        <div class="about_bottom_boxes fade" data-delay="0.1s">
+          <div class="about_boxes_num">02</div>
+          <p class="about_bottom_text">
+            Transform your great <span>journey</span>.
+          </p>
+        </div>
+        <div class="about_bottom_boxes fade" data-delay="0.2s">
+          <div class="about_boxes_num">03</div>
+          <p class="about_bottom_text">
+            Hear the world <span>around</span> you.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section about second end -->
+    <!-- ////////////////////////////////// -->
+
+    <!-- section features third start -->
+    <section class="features flex_column " id="feature">
+      <!-- sec top -->
+      <div class="features_top flex_column lok" data-lok="feature">
+        <div class="features_title flex_center">
+          <span class="features_title_num">13</span>
+          <h2 class="heading_secondery">Exclusive features.</h2>
+        </div>
+        <div class="features_card_box">
+          <div class="features_cards fade">
+            <img src="svg/mic.svg" alt="" class="features_card_icon" />
+            <span class="features_card_title">Microphone built-in</span>
+            <p class="describe_text">
+              Lorem ipsum consectetur elit eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="features_cards fade" data-delay="0.1s">
+            <img src="svg/drop.svg" alt="" class="features_card_icon" />
+            <span class="features_card_title">Water resistant</span>
+            <p class="describe_text">
+              Lorem ipsum consectetur elit eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="features_cards fade" data-delay="0.2s">
+            <img src="svg/signal.svg" alt="" class="features_card_icon" />
+            <span class="features_card_title">Powerful signal</span>
+            <p class="describe_text">
+              Lorem ipsum consectetur elit eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="features_cards fade">
+            <img src="svg/sound.svg" alt="" class="features_card_icon" />
+            <span class="features_card_title">Noise cancellation</span>
+            <p class="describe_text">
+              Lorem ipsum consectetur elit eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="features_cards fade" data-delay="0.1s">
+            <img
+              src="svg/Environmental.svg"
+              alt=""
+              class="features_card_icon"
+            />
+            <span class="features_card_title">Environment friendly</span>
+            <p class="describe_text">
+              Lorem ipsum consectetur elit eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="features_cards fade" data-delay="0.2s">
+            <img src="svg/headphone.svg" alt="" class="features_card_icon" />
+            <span class="features_card_title">Sleek design</span>
+            <p class="describe_text">
+              Lorem ipsum consectetur elit eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="features_note flex_row text_center fade">
+        <span class="features_note_symbol">impressive</span>
+        <p class="features_note_text">
+          High quality bass and sound with much more
+          <span>awesome features.</span>
+        </p>
+      </div>
+      <!-- sec middle -->
+      <div class="features_middle lok" id="technology" data-lok="technology">
+        <div class="features_middle_left">
+          <img
+            class="features_middle_left_img"
+            src="img/demo-product-showcase-product-05.png"
+            alt=""
+          />
+          <p class="translate_text">listening</p>
+        </div>
+        <div class="features_middle_right flex_column">
+          <div class="features_middle_box">
+            <img
+              class="about_middle_right_icon"
+              src="svg/headphone-2.svg"
+              alt=""
+            />
+            <h1 class="heading_primary">Hypnotic listening.</h1>
+            <p class="describe_text">
+              Quality is guaranteed by the latest wireless technology including
+              bluetooth 5.0 high quality codec support and an excellent 30 hour
+              battery life.
+            </p>
+            <a href="" class="cta__btn about_btn flex_center">
+              <div class="about_btn_box flex_center">
+                <span class="about_btn_hover flex_center"
+                  ><img
+                    src="svg/youtube.svg"
+                    alt=""
+                    class="btn_box_icon icon_l" />
+                  <p>Watch technology</p>
+                  <img src="svg/youtube.svg" alt="" class="btn_box_icon icon_r"
+                /></span>
+              </div>
+            </a>
+          </div>
+          <div class="features_middle_box">
+            <img class="about_middle_right_icon" src="svg/design.svg" alt="" />
+            <h1 class="heading_primary">Dynamic designed.</h1>
+            <p class="describe_text">
+              Quality is guaranteed by the latest wireless technology including
+              bluetooth 5.0 high quality codec support and an excellent 30 hour
+              battery life.
+            </p>
+            <a href="" class="cta__btn about_btn flex_center">
+              <div class="about_btn_box flex_center">
+                <span class="about_btn_hover flex_center"
+                  ><img
+                    src="svg/youtube.svg"
+                    alt=""
+                    class="btn_box_icon icon_l" />
+                  <p>Watch technology</p>
+                  <img src="svg/youtube.svg" alt="" class="btn_box_icon icon_r"
+                /></span>
+              </div>
+            </a>
+          </div>
+          <div class="features_middle_box">
+            <img class="about_middle_right_icon" src="svg/note.svg" alt="" />
+            <h1 class="heading_primary">Naturally interact.</h1>
+            <p class="describe_text">
+              Quality is guaranteed by the latest wireless technology including
+              bluetooth 5.0 high quality codec support and an excellent 30 hour
+              battery life.
+            </p>
+            <a href="" class="cta__btn about_btn flex_center">
+              <div class="about_btn_box flex_center">
+                <span class="about_btn_hover flex_center"
+                  ><img
+                    src="svg/youtube.svg"
+                    alt=""
+                    class="btn_box_icon icon_l" />
+                  <p>Watch technology</p>
+                  <img src="svg/youtube.svg" alt="" class="btn_box_icon icon_r"
+                /></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- sec bottom -->
+      <div class="features_bottom">
+        <div class="marquee-track">
+          <span class="marquee-text">Dynamic designed. </span>
+          <span class="marquee-text text_2">Naturally interact.</span>
+          <span class="marquee-text text_3">Hypnotic listening.</span>
+          <span class="marquee-text">Dynamic designed. </span>
+          <span class="marquee-text text_2">Naturally interact.</span>
+          <span class="marquee-text text_3">Hypnotic listening.</span>
+        </div>
+      </div>
+    </section>
+    <!-- section features third end -->
+    <!-- //////////////////////// -->
+
+    <!-- section slider -->
+    <p id="custom-cursor">< Drag ></p>
+    <section class="design flex_column lok" id="design" data-lok="design">
+      <div class="design_top">
+        <div class="design_top_title" id="title_text">
+          A radically original composition.
+        </div>
+        <div class="design_slider fade_s" id="slider">
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-01.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Aluminium</p>
+            <p class="slides_text">Cups</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-02.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Stainless</p>
+            <p class="slides_text">Frame</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-03.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Canopy</p>
+            <p class="slides_text">Spanning</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-04.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Mesh</p>
+            <p class="slides_text">Textile</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-05.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Digital</p>
+            <p class="slides_text">Control</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-06.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Audible</p>
+            <p class="slides_text">Range</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-07.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Fidelity</p>
+            <p class="slides_text">Audio</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-04.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Canopy</p>
+            <p class="slides_text">Spanning</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-03.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Digital</p>
+            <p class="slides_text">Control</p>
+          </div>
+          <div class="slides">
+            <img
+              src="img/demo-product-showcase-slider-02.jpg"
+              alt=""
+              class="slides_img"
+            />
+            <p class="slides_title">Stainless</p>
+            <p class="slides_text">Frame</p>
+          </div>
+        </div>
+      </div>
+      <div class="design_bottom">
+        <div class="design_bottom_title text_center">
+          <img
+            class="about_middle_right_icon"
+            src="svg/free_icon_1.svg"
+            alt=""
+          />
+          <p>Awarded ergonomically painless awesome headphone designed</p>
+        </div>
+      </div>
+    </section>
+    <!-- section design end -->
+    <!-- /////////////////////////// -->
+
+    <!-- section testomonials start -->
+    <section class="testomonials lok" id="review" data-lok="review">
+      <h2 class="heading_primary fade">Loved by most valuable customers</h2>
+      <div class="testomonials_slider fade_s">
+        <div class="user_Comment">
+          <img src="img/avtar-24.jpg" alt="" class="user_picture" />
+          <p class="user_title">
+            Simple and easy to integrate and build the website!
+          </p>
+          <p class="user_text">
+            I was surprised at the sound quality from these phones right out of
+            the box. I'm a fan of the sound and normally use with my home
+            equipment.
+          </p>
+          <span class="user_name">Herman Miller</span>
+          <sapn class="user_job">Apple Design</sapn>
+        </div>
+        <div class="user_Comment active">
+          <img src="img/avtar-26.jpg" alt="" class="user_picture" />
+          <p class="user_title">
+            Every element is designed beautifully and perfect!
+          </p>
+          <p class="user_text">
+            These are great headphones for music and movies for the price. I
+            have never owned a big-money pair of headphones. It's a good pair of
+            headphones.
+          </p>
+          <span class="user_name">Shoko Mugikura</span>
+          <sapn class="user_job"> Google Design</sapn>
+        </div>
+        <div class="user_Comment">
+          <img src="img/avtar-25.jpg" alt="" class="user_picture" />
+          <p class="user_title">
+            Just love their design for all stunning details!
+          </p>
+          <p class="user_text">
+            These sounded far better than expected for the price. The cord is a
+            tad shorter than others I have purchased so take note. Great for a
+            good value.
+          </p>
+          <span class="user_name">Alexander Harvard</span>
+          <sapn class="user_job">Themezaa Design</sapn>
+        </div>
+      </div>
+      <div class="testomonials_bottom flex_row">
+        <div class="rate_box fade">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="rate_box_icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <span class="rate_box_text flex_row">
+          <p>Check all <b>3,583</b> readers reviews on</p>
+          <a class="rate_box_link" href="www.amazon.com"
+            ><img src="img/demo-ebook-05.png" alt="" /></a
+        ></span>
+      </div>
+    </section>
+    <!-- section testomonials end -->
+    <!-- /////////////////////////////////////// -->
+
+    <section class="products lok" id="pricing" data-lok="pricing">
+      <h2 class="heading_primary fade">Choose the perfect product for you</h2>
+      <div class="products_grid">
+        <div class="product_card fade">
+          <img
+            src="img/demo-product-showcase-product-01.png"
+            alt=""
+            class="product_card_img"
+          /><img
+            src="img/demo-product-showcase-product-thumb-01.png"
+            alt=""
+            class="product_card_color"
+          />
+          <p>Silver</p>
+        </div>
+        <div class="product_card fade" data-delay="0.1s">
+          <img
+            src="img/demo-product-showcase-product-04.png"
+            alt=""
+            class="product_card_img"
+          /><img
+            src="img/demo-product-showcase-product-thumb-02.png"
+            alt=""
+            class="product_card_color"
+          />
+          <p>Gray</p>
+        </div>
+        <div class="product_card fade" data-delay="0.2s">
+          <img
+            src="img/demo-product-showcase-product-03.png"
+            alt=""
+            class="product_card_img"
+          /><img
+            src="img/demo-product-showcase-product-thumb-03.png"
+            alt=""
+            class="product_card_color"
+          />
+          <p>Pink</p>
+        </div>
+        <div class="product_card fade" data-delay="0.3s">
+          <img
+            src="img/demo-product-showcase-product-02.png"
+            alt=""
+            class="product_card_img"
+          /><img
+            src="img/demo-product-showcase-product-thumb-04.png"
+            alt=""
+            class="product_card_color"
+          />
+          <p>Blue</p>
+        </div>
+      </div>
+      <!-- product cta -->
+      <div class="product_cta">
+        <div class="product_cta_top flex_row fade_l">
+          <span class="price_num">Just $999</span
+          ><a href="" class="price_btn">Purchase now</a>
+        </div>
+        <div class="product_cta_bottom fade_r">
+          <p>secure</p>
+          <div class="cir"></div>
+          <p>free</p>
+          <div class="cir"></div>
+          <p>contactless delivery</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////////////////////////////// -->
+    <!-- section footer start -->
+    <footer class="fotter">
+      <div class="footer_top">
+        <div class="contact">
+          <p class="contact_title">Let's talk with us</p>
+          <a href="" class="contact_cta pink_h">1-800-222-000</a>
+        </div>
+        <div class="sosial_media flex_center">
+          <a href="" class="sosial_links"
+            ><i class="fa-brands fa-facebook-f"></i
+            ><span class="facebook"></span
+          ></a>
+          <a href="" class="sosial_links"
+            ><i class="fa-brands fa-dribbble"></i><span class="dribbble"></span
+          ></a>
+          <a href="" class="sosial_links"
+            ><i class="fa-brands fa-twitter"></i><span class="tiwtter"></span
+          ></a>
+          <a href="" class="sosial_links"
+            ><i class="fa-brands fa-instagram"></i
+            ><span class="instagram"></span
+          ></a>
+          <a href="" class="sosial_links"
+            ><i class="fa-brands fa-linkedin-in"></i
+            ><span class="linkedin"></span
+          ></a>
+        </div>
+        <div class="contact">
+          <p class="contact_title right">Get customer care</p>
+          <a href="" class="contact_cta pink_h">info@domain.com</a>
+        </div>
+      </div>
+      <div class="footer_bottom flex_row">
+        <div class="footer_menu">
+          <a href="" class="pink_h footer_menu_links">Overview</a
+          ><a href="" class="pink_h footer_menu_links">Features</a
+          ><a href="" class="pink_h footer_menu_links">Technology</a
+          ><a href="" class="pink_h footer_menu_links">Design</a
+          ><a href="" class="pink_h footer_menu_links">Review</a>
+          <a href="" class="pink_h footer_menu_links">Pricing</a>
+        </div>
+        <span class="copy_R"
+          >© 2024 Crafto is proudly powered by
+          <a class="pink_h" href="#">ThemeZaa</a></span
+        >
+      </div>
+    </footer>
+    <!-- section footer end -->
+    <!-- ///////////////////////////////// -->
+    <!--  -->
+    <section class="scroll">
+      <div class="scroll__box">
+        <div class="scroll__box_range"></div>
+      </div>
+      <p>Scroll</p>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

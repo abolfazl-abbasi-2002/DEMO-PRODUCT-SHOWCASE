@@ -1,0 +1,241 @@
+/* VARIABLES */
+:root {
+  --alt-font: "Plus Jakarta Sans", sans-serif;
+  --primary-font: "Inter", sans-serif;
+  --base-color: #00aced;
+  --white: #ffffff;
+  --black: #000000;
+  --red: #dc3131;
+  --light-red: #feedec;
+  --green: #2ebb79;
+  --crusoe-green: #d39121;
+  --yellow: #ffea23;
+  --dark-gray: #232323;
+  --medium-gray: #717580;
+  --extra-medium-gray: #e4e4e4;
+  --light-gray: #a8a8a8;
+  --very-light-gray: #f8f9fa;
+  --light-medium-gray: #eaeaeb;
+  --charcoal-blue: #202329;
+  --slate-blue: #262b35;
+  --medium-slate-blue: #374162;
+  --extra-medium-slate-blue: #23262d;
+  --dark-slate-blue: #1f232c;
+  --extra-dark-slate-blue: #121418;
+  --extra-very-slate-blue: #161620;
+  --tussock-yellow: #bc8947;
+  --aluminium-grey: #80858f;
+  --solitude-blue: #f0f4fd;
+  --golden-yellow: #fd961e;
+  --selago: #eaedff;
+  --white-ice: #d8f5ef;
+  --cornflower-blue: #3b5998;
+  --jade: #00af6b;
+  --orange: #ef991f;
+  --majorelle-blue: #724ade;
+  --light-majorelle-blue: #f2edfe;
+  --spring-wood: #f9f6f3;
+  --tropical-blue: #1ea3b1;
+  --camarone: #20642b;
+  --seal-brown: #0e0708;
+  --Wasabi: #8ea63a;
+  --pink: #ff007b;
+  --pink-dark: #ea4c89;
+}
+
+/*GENERAL ELEMENTS*/
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+body.active{
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+}
+button {
+  font-family: "Manrope", sans-serif;
+}
+/* #################### */
+/* heading texts */
+.heading_primary {
+  font-size: 7rem;
+  letter-spacing: -4px;
+  font-weight: 800;
+  width: 70%;
+  color: var(--slate-blue);
+  line-height: 1;
+}
+.heading_secondery {
+  font-size: 6rem;
+  letter-spacing: -4px;
+  font-weight: 800;
+  color: var(--slate-blue);
+  line-height: 1;
+}
+.describe_text {
+  width: 60%;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--aluminium-grey);
+}
+
+/* ############### */
+/* componets */
+.flex_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex_row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex_column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta__btn {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--slate-blue);
+  border: none;
+  outline: none;
+}
+/* mobile menu btn */
+.menu_btn {
+  display: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  position: relative;
+}
+.center{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  text-align: center;
+}
+.btn_lines {
+  display: block;
+  height: 3px;
+  width: 15px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  margin: 5px auto;
+}
+.line_middle{
+  width: 25px;
+}
+.menu_btn.active .line_top {
+  width: 30px;
+  transform-origin: left center;
+  transform: translate(5px,-1px) rotate(45deg);
+}
+.menu_btn.active .line_middle {
+  width: 0px;
+  opacity: 0;
+}
+.menu_btn.active .line_bottom {
+  width: 30px;
+  transform-origin: right center;
+  transform: translate(-4px,-17px) rotate(-45deg);
+}
+
+.pink_h {
+  transition: all 0.3s ease;
+}
+.pink_h:hover {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  visibility: hidden;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.fade_r {
+  opacity: 0;
+  transform: translateX(10rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  visibility: hidden;
+}
+
+.fade_r.show {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.fade_l {
+  opacity: 0;
+  transform: translateX(-10rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  visibility: hidden;
+}
+
+.fade_l.show {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+.fade_s {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  visibility: hidden;
+}
+
+.fade_s.show {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.fade_o {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  visibility: hidden;
+}
+
+.fade_o.show {
+  opacity: 1;
+  visibility: visible;
+}
