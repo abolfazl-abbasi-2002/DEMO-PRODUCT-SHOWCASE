@@ -72,19 +72,39 @@ window.addEventListener("scroll", () => {
 });
 
 // motion efect
-function isMobileDevice() {
-  return /Android|iPhone|iPad|iPod|BlackBerry|windows Phone/i.test(
-    navigator.userAgent
-  );
-}
+
 const tracker = document.querySelectorAll(".tracker");
 document.addEventListener("mousemove", (e) => {
   const x = (e.clientX / window.innerWidth - 0.5) * -80; // بین -20 تا +20
-  const y = (e.clientY / window.innerHeight - 0.5) * -80; // بین -20 تا +20
   tracker.forEach((e) => {
-    isMobileDevice()? e.style.transform = `translate(${x}px,${y}px)` :e.style.transform = `translateX(${x}px)`;
+    e.style.transform = `translateX(${x}px)`;
   });
 });
+
+if (
+  typeof DeviceOrientationEvent !== "undefined" &&
+  typeof DeviceOrientationEvent.requestPermission === "function"
+) {
+  DeviceOrientationEvent.requestPermission()
+    .then((permissionState) => {
+      if (permissionState === "granted") {
+        window.addEventListener("deviceorientation", handleOrientation);
+      }
+    })
+    .catch(console.error);
+} else {
+  window.addEventListener("deviceorientation", handleOrientation);
+}
+
+function handleOrientation(event) {
+  const x = event.gamma; // چرخش گوشی به چپ/راست
+  const y = event.beta; // خم شدن گوشی به جلو/عقب
+  tracker.forEach((e) => {
+    e.style.transform = `translate(${x * 2}px, ${y * 2}px)`;
+  });
+}
+
+
 
 // num scale
 const title_num = document.querySelector(".features_title_num");
