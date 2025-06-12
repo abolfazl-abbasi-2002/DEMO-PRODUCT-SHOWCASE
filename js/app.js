@@ -244,12 +244,7 @@ setInterval(() => {
   comment[index].classList.add("active");
 }, 4000); // هر ۴ ثانیه
 
-const wid = document.querySelector(".ss");
-window.addEventListener("resize", () => {
-  const windo = window.innerWidth;
-  const windoh = window.innerHeight;
-  wid.innerHTML = `w:${windo} h:${windoh}`;
-});
+
 
 // fade
 const fade_up = document.querySelectorAll(".fade");
