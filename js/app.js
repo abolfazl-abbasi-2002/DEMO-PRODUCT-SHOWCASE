@@ -100,7 +100,7 @@ function handleOrientation(event) {
   const x = event.gamma; // چرخش گوشی به چپ/راست
   const y = event.beta; // خم شدن گوشی به جلو/عقب
   tracker.forEach((e) => {
-    e.style.transform = `translate(${x * 0.5}px, ${y * 0.5}px)`;
+    e.style.transform = `translate(${x * 1}px, ${y * 1}px)`;
   });
 }
 
@@ -243,8 +243,6 @@ setInterval(() => {
   }
   comment[index].classList.add("active");
 }, 4000); // هر ۴ ثانیه
-
-
 
 // fade
 const fade_up = document.querySelectorAll(".fade");
