@@ -140,6 +140,9 @@
   }
 }
 @media (max-width: 780px) {
+  .hero__title {
+    font-size: 20vw;
+  }
   .flex_row {
     flex-direction: column;
   }
